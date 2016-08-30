@@ -1,0 +1,22 @@
+{
+  "name": "form-builder",
+  "version": "0.0.1",
+  "description": "Generate basic React-Bootstrap forms which can be generated from a JSON object and dropped into any React component.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/ckeyes88/form-builder.git"
+  },
+  "keywords": [
+    "form",
+    "builder",
+    "generator",
+    "react"
+  ],
+  "author": "Chip Keyes",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/ckeyes88/form-builder#readme"
+}
