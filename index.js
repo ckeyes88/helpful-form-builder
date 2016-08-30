@@ -1,3 +1,3 @@
-var FormBuilder = require('./src/FormBuilder');
+var FormBuilder = require('./lib/FormBuilder');
 
 module.exports = FormBuilder;
