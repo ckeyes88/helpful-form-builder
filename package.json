@@ -4,7 +4,11 @@
   "description": "Generate basic React-Bootstrap forms which can be generated from a JSON object and dropped into any React component.",
   "main": "index.js",
   "scripts": {
+    "prepublish": "node_modules/babel-cli/bin/babel.js src --out-dir lib",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "babel": {
+    "presets": ["es2015", "react"]
   },
   "repository": {
     "type": "git",
