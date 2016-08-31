@@ -194,7 +194,6 @@ export default class FormBuilder extends React.Component {
           selectedValues.push(newData[1]);
         }
       }
-      newState["favoriteColor"] = [4];
       this.setState({item: newState});
     }
 
@@ -206,9 +205,6 @@ export default class FormBuilder extends React.Component {
 
 /***************************RENDER FUNCTION*****************************/
     render() {
-
-      console.log("ATTRS: ", this.props.editAttributes);
-      console.log("SELECTORS: ", this.props.selectorOptions);
       return(
         <form>
           {this.generateForm()}
