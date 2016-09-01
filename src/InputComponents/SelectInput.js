@@ -36,7 +36,6 @@ export default class SelectInput extends React.Component {
   }
 
   render() {
-    console.log("SELECT:", this.props)
     let validationState = this.props.getValidationState ? this.props.getValidationState(this.state.value) : {};
     return (
       <FormGroup
