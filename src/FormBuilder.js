@@ -1,5 +1,5 @@
 import React from 'react';
-import { includes, pull } from 'lodash';
+import { includes, pull, isEmpty } from 'lodash';
 import { FormGroup, ButtonToolbar, Button } from 'react-bootstrap';
 
 import MultiSelectInput from './InputComponents/MultiSelectInput';
