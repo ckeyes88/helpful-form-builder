@@ -32,14 +32,16 @@ export default class FormBuilder extends React.Component {
       this.setState({item: newState});
     }
 /***************************FORM GENERATORS*****************************/
-    generateForm() {
+    generateForm(formData = this.state.item) {
       let formItems = [];
-      let attributes = this.state.item;
+      let attributes = formData;
       let selectorOptions = this.props.selectorOptions;
 
       for(let key in attributes) {
         let currentVal = attributes[key];
-        if(selectorOptions.hasOwnProperty(key)) {
+         if(typeof(currentVal) == 'object') {
+           this.generateForm(currentVal);
+         } else if(selectorOptions.hasOwnProperty(key)) {
           let options = selectorOptions[key]
           if(options.length <= 4) {
             if( currentVal instanceof Array ) {
