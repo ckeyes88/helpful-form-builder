@@ -36,11 +36,13 @@ export default class FormBuilder extends React.Component {
       let formItems = [];
       let attributes = formData;
       let selectorOptions = this.props.selectorOptions;
-
       for(let key in attributes) {
         let currentVal = attributes[key];
          if(typeof(currentVal) == 'object') {
-           formItems = formItems.concat(this.generateForm(currentVal));
+           if(!isEmpty(currentVal)) {
+             formItems.push(<h4 key={key}>{key}</h4>)
+             formItems = formItems.concat(this.generateForm(currentVal));
+           }
          } else if(selectorOptions.hasOwnProperty(key)) {
           let options = selectorOptions[key]
           if(options.length <= 4) {
