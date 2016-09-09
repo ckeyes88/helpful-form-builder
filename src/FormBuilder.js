@@ -230,14 +230,14 @@ export default class FormBuilder extends React.Component {
             <Button
               bsStyle="danger"
               bsSize="xs"
-              >Delete</Button>
+              onClick={this.props.onDeletePressed}>Delete</Button>
             <Button
               bsStyle="info"
               bsSize="xs" onClick={this.onResetPressed.bind(this)}>Reset</Button>
             <Button
               bsStyle="success"
               bsSize="xs"
-              >Save</Button>
+              onClick={this.props.onSavePressed}>Save</Button>
           </ButtonToolbar>
         </form>
       )
