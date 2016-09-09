@@ -241,7 +241,7 @@ export default class FormBuilder extends React.Component {
             <Button
               bsStyle="success"
               bsSize="xs"
-              onClick={this.props.onSavePressed.bind(null, this.state.item)}>Save</Button>
+              onClick={this.onSavePressed.bind(this)}>Save</Button>
           </ButtonToolbar>
         </form>
       )
