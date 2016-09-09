@@ -8,7 +8,7 @@ export default class CheckBoxInput extends React.Component {
     let optionComponents = optionsArray.map((currentOption, i) => {
       let selectedState = includes(this.props.selected, currentOption);
       return(
-        <Checkbox key={i} id={this.props.label + "-" + currentOption} checked={selectedState} onChange={this.props.onChange}>{currentOption}</Checkbox>
+        <Checkbox key={i} id={this.props.id + "-" + currentOption} checked={selectedState} onChange={this.props.onChange}>{currentOption}</Checkbox>
       )
     });
     return optionComponents
@@ -27,6 +27,7 @@ export default class CheckBoxInput extends React.Component {
 }
 
 CheckBoxInput.propTypes = {
+  id: React.PropTypes.string.isRequired,
   selected: React.PropTypes.array.isRequired,
   options: React.PropTypes.array.isRequired,
   label: React.PropTypes.string.isRequired,

@@ -39,7 +39,7 @@ export default class SelectInput extends React.Component {
     let validationState = this.props.getValidationState ? this.props.getValidationState(this.state.value) : {};
     return (
       <FormGroup
-        controlId={this.props.label}
+        controlId={this.props.id}
         validationState={validationState.state}>
         <ControlLabel>{this.props.label}</ControlLabel>
         <FormControl
@@ -55,6 +55,7 @@ export default class SelectInput extends React.Component {
 }
 
 SelectInput.propTypes = {
+  id: React.PropTypes.string.isRequired,
   selected: React.PropTypes.oneOfType([React.PropTypes.string, React.PropTypes.number]).isRequired,
   options: React.PropTypes.array.isRequired,
   label: React.PropTypes.string.isRequired,

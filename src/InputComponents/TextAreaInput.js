@@ -7,7 +7,7 @@ export default class TextAreaInput extends React.Component {
     let validationState = this.props.getValidationState ? this.props.getValidationState(this.state.value) : {};
     return (
       <FormGroup
-        controlId={this.props.label}
+        controlId={this.props.id}
         validationState={validationState.state}>
         <ControlLabel>{this.props.label}</ControlLabel>
         <FormControl
@@ -22,6 +22,7 @@ export default class TextAreaInput extends React.Component {
 }
 
 TextAreaInput.propTypes = {
+  id: React.PropTypes.string.isRequired,
   value: React.PropTypes.oneOfType([React.PropTypes.string, React.PropTypes.number]).isRequired,
   label: React.PropTypes.string.isRequired,
   getValidationState: React.PropTypes.func,

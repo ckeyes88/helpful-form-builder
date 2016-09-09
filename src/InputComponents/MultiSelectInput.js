@@ -28,7 +28,7 @@ export default class MultiSelectInput extends React.Component {
     let validationState = this.props.getValidationState ? this.props.getValidationState(this.state.value) : {};
     return (
       <FormGroup
-        controlId={this.props.label}
+        controlId={this.props.id}
         validationState={validationState.state}>
         <ControlLabel>{this.props.label}</ControlLabel>
         <FormControl
@@ -45,6 +45,7 @@ export default class MultiSelectInput extends React.Component {
 }
 
 MultiSelectInput.propTypes = {
+  id: React.PropTypes.string.isRequired,
   selected: React.PropTypes.array.isRequired,
   options: React.PropTypes.array.isRequired,
   label: React.PropTypes.string.isRequired,

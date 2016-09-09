@@ -18,7 +18,7 @@ export default class RadioButtonInput extends React.Component {
     let optionComponents = optionsArray.map((currentOption, i) => {
       let selectedState = includes(this.props.selected, currentOption);
       return(
-        <Radio key={i} id={this.props.label + "-" + currentOption} checked={selectedState} onChange={this.props.onChange}>{currentOption}</Radio>
+        <Radio key={i} id={this.props.id + "-" + currentOption} checked={selectedState} onChange={this.props.onChange}>{currentOption}</Radio>
       )
     });
     return optionComponents
@@ -37,6 +37,7 @@ export default class RadioButtonInput extends React.Component {
 }
 
 RadioButtonInput.propTypes = {
+  id: React.PropTypes.string.isRequired,
   selected: React.PropTypes.oneOfType([React.PropTypes.string, React.PropTypes.number]).isRequired,
   options: React.PropTypes.array.isRequired,
   label: React.PropTypes.string.isRequired,
