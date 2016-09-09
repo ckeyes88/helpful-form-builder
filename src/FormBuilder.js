@@ -221,6 +221,10 @@ export default class FormBuilder extends React.Component {
       this.setState({item: this.props.editAttributes});
     }
 
+    onSavePressed() {
+      this.props.onSavePressed(this.state.item);
+    }
+
 /***************************RENDER FUNCTION*****************************/
     render() {
       return(
@@ -237,7 +241,7 @@ export default class FormBuilder extends React.Component {
             <Button
               bsStyle="success"
               bsSize="xs"
-              onClick={this.props.onSavePressed}>Save</Button>
+              onClick={this.props.onSavePressed.bind(null, this.state.item)}>Save</Button>
           </ButtonToolbar>
         </form>
       )
