@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/ckeyes88/helpful-form-builder.git"
+    "url": "git+https://github.com/dabellator/helpful-form-builder.git"
   },
   "keywords": [
     "form",
@@ -23,7 +23,7 @@
     "generator",
     "react"
   ],
-  "author": "Chip Keyes",
+  "author": "Chip Keyes <chip@helpfulhuman.com>",
   "license": "ISC",
   "homepage": "https://bitbucket.org/ckeyes88/helpful-form-builder#readme",
   "dependencies": {
