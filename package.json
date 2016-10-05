@@ -1,6 +1,6 @@
 {
   "name": "helpful-form-builder",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Generate basic React-Bootstrap forms which can be generated from a JSON object and dropped into any React component.",
   "main": "index.js",
   "scripts": {
