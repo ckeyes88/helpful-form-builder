@@ -1,0 +1,37 @@
+exports[`test TextInput renders correctly 1`] = `
+<div
+  className="form-group has-feedback">
+  <label
+    className="control-label"
+    htmlFor="text-field">
+    First Name
+  </label>
+  <input
+    className="form-control"
+    id="text-field"
+    onChange={[Function]}
+    type="text"
+    value="Chip" />
+  <span
+    className="help-block" />
+</div>
+`;
+
+exports[`test TextInput renders correctly 2`] = `
+<div
+  className="form-group has-feedback">
+  <label
+    className="control-label"
+    htmlFor="text-field">
+    First Name
+  </label>
+  <input
+    className="form-control"
+    id="text-field"
+    onChange={[Function]}
+    type="text"
+    value="Chip" />
+  <span
+    className="help-block" />
+</div>
+`;
